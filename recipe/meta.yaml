@@ -1,5 +1,5 @@
 {% set name = "cmake_format" %}
-{% set version = "0.6.6" %}
+{% set version = "0.6.7" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b2f6a9d21b86edf1dc93eba605b5a664173b381511a8632b8c8f1e07f032c328
+  sha256: ed2ab02318bdacf6b5cdb3b98fce4b91a10e4a58d970953f3c260424e353ea34
 
 build:
   number: 0
