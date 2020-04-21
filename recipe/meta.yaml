@@ -1,13 +1,13 @@
 {% set name = "cmake_format" %}
-{% set version = "0.6.9" %}
+{% set version = "0.6.10" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: b2f8bf2e9c6651126f2f2954b7803222b0faf6b8649eabc4d965ea97483a4d20
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 82f0ef16236225cb43f45bfb6983ef7f6f72634727a1a6c26290402527bdd793
 
 build:
   number: 0
@@ -15,7 +15,7 @@ build:
   entry_points:
     - cmake-format=cmake_format.__main__:main
     - cmake-annotate=cmake_format.annotate:main
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -35,11 +35,11 @@ test:
     - cmake-annotate --help
 
 about:
-  home: "https://github.com/cheshirekow/cmake_format"
+  home: https://github.com/cheshirekow/cmake_format
   license: GPL-3
   license_family: GPL
   license_file: LICENSE
-  summary: "Can format your listfiles so they don't look like crap"
+  summary: Can format your listfiles so they don't look like crap
 
 extra:
   recipe-maintainers:
