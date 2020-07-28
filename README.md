@@ -3,9 +3,9 @@ About cmake_format
 
 Home: https://github.com/cheshirekow/cmake_format
 
-Package license: GPL-3
+Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Can format your listfiles so they don't look like crap
 
