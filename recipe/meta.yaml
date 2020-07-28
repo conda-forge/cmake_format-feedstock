@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/cheshirekow/cmake_format
-  license: GPL-3.0
+  license: GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
   summary: Can format your listfiles so they don't look like crap
